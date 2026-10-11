@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Fundamentals — Digital Girls Initiative Pakistan</title>
+<meta name="description" content="The language that makes websites interactive — from a button click to a full web app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span><span class="tag">✦</span>DIGITAL GIRLS INITIATIVE · PAKISTAN</span>
+      <span>EMPOWERING WOMEN THROUGH TECH</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="logo">DG<span>·</span>IP</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li class="dropdown">
+          <a href="index.html#modules" class="nav-cta">Skill Modules</a>
+          <div class="dropdown-menu">
+            <a href="html-css.html">HTML & CSS <small>01</small></a>
+            <a href="javascript.html">JavaScript Fundamentals <small>02</small></a>
+            <a href="python.html">Python Programming <small>03</small></a>
+            <a href="design.html">Graphic Design & UI/UX <small>04</small></a>
+            <a href="cybersecurity.html">Cybersecurity Awareness <small>05</small></a>
+            <a href="data-science.html">Data Science Basics <small>06</small></a>
+            <a href="digital-literacy.html">Digital Literacy & Safety <small>07</small></a>
+            <a href="entrepreneurship.html">Tech Entrepreneurship <small>08</small></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="subhero">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a> / <a href="index.html#modules">Skill Modules</a> / JavaScript Fundamentals</div>
+      <span class="subhero-tag">Module 02 · Web</span>
+      <h1>JavaScript Fundamentals</h1>
+      <p class="lede">The language that makes websites interactive — from a button click to a full web app.</p>
+      <div class="subhero-meta">
+        <span>8–10 weeks · 5–7 hrs/week</span>
+        <span>HTML & CSS basics recommended</span>
+        <span>4 Learning Phases</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-body">
+    <div class="page-grid">
+      <aside class="toc">
+        <p class="head">On This Page</p>
+        <a href="#roadmap">The Roadmap</a>
+          <a href="#phase-1">Phase 01 — Syntax & Core Concepts</a>
+          <a href="#phase-2">Phase 02 — Functions & the DOM</a>
+          <a href="#phase-3">Phase 03 — Data Structures & Logic</a>
+          <a href="#phase-4">Phase 04 — Async JavaScript & Projects</a>
+        <a href="#videos">Free Video Courses</a>
+        <a href="#ebook">Download the E-Book</a>
+      </aside>
+
+      <div class="content">
+        <p>JavaScript is what turns a static page into an app — it's the language behind every dropdown menu, form validation, and live-updating feed you've ever used. This track takes you from your first variable to fetching real data from the internet and building an interactive project of your own.</p>
+        <div class="taglist">
+        <span>Builds on HTML/CSS</span>
+        <span>Project-Based</span>
+        <span>Covers Async & APIs</span>
+        <span>4 Phases</span>
+        </div>
+
+        <div class="callout"><strong>Mentor Tip</strong>Break early and often — you'll learn more from figuring out why your code doesn't work than from code that works on the first try.</div>
+
+        <h2 id="roadmap">The Roadmap</h2>
+      <div class="phase" id="phase-1">
+        <div class="phase-head">
+          <span class="phase-num">01</span>
+          <div><h3>Syntax & Core Concepts<small>How JavaScript thinks</small></h3></div>
+        </div>
+        <div class="phase-body">
+          <p>Every program is built from a small set of ideas repeated constantly: storing values, making decisions, and repeating actions.</p>
+          <div class="phase-steps">
+          <div class="step">
+            <span class="step-check">01</span>
+            <div><strong>Variables & data types</strong><span>let, const, strings, numbers, booleans — how JavaScript stores information.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">02</span>
+            <div><strong>Operators & expressions</strong><span>Arithmetic, comparison, and logical operators used to build any condition.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">03</span>
+            <div><strong>Conditionals</strong><span>if / else / switch — how a program makes decisions.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">04</span>
+            <div><strong>Loops</strong><span>for, while, and for...of — how a program repeats work without repeating code.</span></div>
+          </div>
+          </div>
+          <div class="phase-project"><strong>Practice Project</strong>Build a console-based number guessing game using conditionals and a loop.</div>
+        </div>
+      </div>
+      <div class="phase" id="phase-2">
+        <div class="phase-head">
+          <span class="phase-num">02</span>
+          <div><h3>Functions & the DOM<small>Reusable logic and a live page</small></h3></div>
+        </div>
+        <div class="phase-body">
+          <p>Functions let you package logic once and reuse it anywhere. The DOM is how JavaScript reaches into HTML and changes it live, in the browser.</p>
+          <div class="phase-steps">
+          <div class="step">
+            <span class="step-check">01</span>
+            <div><strong>Functions & scope</strong><span>Declarations, parameters, return values, and arrow function syntax.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">02</span>
+            <div><strong>Selecting the DOM</strong><span>querySelector and getElementById — grabbing the exact element you want.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">03</span>
+            <div><strong>Changing the DOM</strong><span>Updating text, styles, and classes in response to code.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">04</span>
+            <div><strong>Event listeners</strong><span>Responding to clicks, input, and form submissions in real time.</span></div>
+          </div>
+          </div>
+          <div class="phase-project"><strong>Practice Project</strong>Build a click counter and a simple light/dark mode toggle button.</div>
+        </div>
+      </div>
+      <div class="phase" id="phase-3">
+        <div class="phase-head">
+          <span class="phase-num">03</span>
+          <div><h3>Data Structures & Logic<small>Working with real, structured data</small></h3></div>
+        </div>
+        <div class="phase-body">
+          <p>Almost every app deals with lists and structured records — this phase covers the tools built for exactly that.</p>
+          <div class="phase-steps">
+          <div class="step">
+            <span class="step-check">01</span>
+            <div><strong>Arrays & array methods</strong><span>map, filter, and reduce — the three methods used in nearly every JS codebase.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">02</span>
+            <div><strong>Objects</strong><span>Key-value data, nested objects, and accessing properties.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">03</span>
+            <div><strong>JSON</strong><span>The universal format used to move data between a server and your app.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">04</span>
+            <div><strong>Debugging with the console</strong><span>console.log habits and reading browser error messages without panic.</span></div>
+          </div>
+          </div>
+          <div class="phase-project"><strong>Practice Project</strong>Build a to-do list app: add, complete, and delete tasks, stored in an array and rendered to the DOM.</div>
+        </div>
+      </div>
+      <div class="phase" id="phase-4">
+        <div class="phase-head">
+          <span class="phase-num">04</span>
+          <div><h3>Async JavaScript & Projects<small>Talking to the real internet</small></h3></div>
+        </div>
+        <div class="phase-body">
+          <p>Real apps fetch live data from servers. This phase covers the async patterns needed to do that cleanly.</p>
+          <div class="phase-steps">
+          <div class="step">
+            <span class="step-check">01</span>
+            <div><strong>Promises</strong><span>Understanding pending / resolved / rejected states.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">02</span>
+            <div><strong>async / await</strong><span>Writing asynchronous code that reads top-to-bottom, the modern standard.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">03</span>
+            <div><strong>The fetch API</strong><span>Requesting real data from a public API.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">04</span>
+            <div><strong>Error handling</strong><span>try / catch so a failed request doesn't crash your whole app.</span></div>
+          </div>
+          </div>
+          <div class="phase-project"><strong>Practice Project</strong>Build a weather-lookup or quote-generator app that fetches live data from a free public API.</div>
+        </div>
+      </div>
+
+        <h2 id="videos">Free Video Courses</h2>
+        <p>Curated, highly-rated, and free — pick whichever teaching style matches how you learn best.</p>
+        <div class="video-grid">
+        <a class="video-card " href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank" rel="noopener">
+          <span class="video-play">▶</span>
+          <div class="video-info"><strong>freeCodeCamp — JS Algorithms & Data Structures</strong><span>Full certification with built-in practice challenges</span></div>
+        </a>
+        <a class="video-card alt" href="https://www.youtube.com/@NetNinja" target="_blank" rel="noopener">
+          <span class="video-play">▶</span>
+          <div class="video-info"><strong>The Net Ninja — JavaScript Playlist</strong><span>Beginner-paced, project-driven video series</span></div>
+        </a>
+        <a class="video-card alt2" href="https://javascript.info/" target="_blank" rel="noopener">
+          <span class="video-play">▶</span>
+          <div class="video-info"><strong>javascript.info</strong><span>The most thorough free written tutorial available</span></div>
+        </a>
+        <a class="video-card alt" href="https://www.youtube.com/@TraversyMedia" target="_blank" rel="noopener">
+          <span class="video-play">▶</span>
+          <div class="video-info"><strong>Traversy Media — JS Crash Course</strong><span>Fast, practical crash courses and real mini-projects</span></div>
+        </a>
+        </div>
+
+        <h2 id="ebook">Download the E-Book</h2>
+        <div class="ebook-band">
+          <div class="ebook-cover"><svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" y="10" width="150" height="210" fill="#1B1913"/>
+  <rect x="10" y="4" width="150" height="210" fill="#EF5A28" stroke="#1B1913" stroke-width="3"/>
+  <rect x="10" y="4" width="150" height="210" fill="none" stroke="#1B1913" stroke-width="3"/>
+  <rect x="10" y="4" width="18" height="210" fill="#C7431A"/>
+  <rect x="40" y="36" width="94" height="10" fill="#FCF3DD"/>
+  <rect x="40" y="54" width="70" height="8" fill="#FCF3DD" opacity="0.85"/>
+  <circle cx="85" cy="120" r="34" fill="#F3C2D6" stroke="#1B1913" stroke-width="3"/>
+  <text x="85" y="129" font-family="Georgia, serif" font-weight="700" font-size="26" fill="#1B1913" text-anchor="middle">DG</text>
+  <rect x="40" y="176" width="94" height="7" fill="#FCF3DD" opacity="0.7"/>
+  <rect x="40" y="190" width="60" height="7" fill="#FCF3DD" opacity="0.7"/>
+  <rect x="10" y="4" width="150" height="210" fill="none" stroke="#1B1913" stroke-width="3"/>
+</svg></div>
+          <div class="ebook-text">
+            <span class="eyebrow">Custom AI-Generated Guide</span>
+            <h3>The DG·IP JavaScript Fundamentals Companion</h3>
+            <p>A free, printable e-book built for this exact module — the full roadmap, every phase's steps, and extra practice prompts, in one downloadable PDF.</p>
+            <a class="btn btn--primary" href="ebooks/javascript.pdf" download>Download the E-Book (PDF) ↓</a>
+          </div>
+        </div>
+
+        <div class="next-module">
+          <div>
+            <span class="label">Next Module · 03</span>
+            <h4>Python Programming</h4>
+          </div>
+          <a class="btn btn--dark" href="python.html">Continue Learning →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>DG·IP</h4>
+          <p>Digital Girls Initiative Pakistan is a non-profit teaching young women the tech skills that open doors — free, forever.</p>
+        </div>
+        <div class="footer-col">
+          <p class="head">Navigate</p>
+          <a href="index.html">Home</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="index.html#modules">Skill Modules</a>
+        </div>
+        <div class="footer-col">
+          <p class="head">Skill Modules</p>
+          <a href="html-css.html">HTML &amp; CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="python.html">Python</a>
+          <a href="design.html">UI/UX Design</a>
+        </div>
+        <div class="footer-col">
+          <p class="head">More Modules</p>
+          <a href="cybersecurity.html">Cybersecurity</a>
+          <a href="data-science.html">Data Science</a>
+          <a href="digital-literacy.html">Digital Literacy</a>
+          <a href="entrepreneurship.html">Entrepreneurship</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Digital Girls Initiative Pakistan. All rights reserved.</span>
+        <span>Built for the next generation of builders.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up — Digital Girls Initiative Pakistan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span><span class="tag">✦</span>DIGITAL GIRLS INITIATIVE · PAKISTAN</span>
+      <span>EMPOWERING WOMEN THROUGH TECH</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="logo">DG<span>·</span>IP</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signup.html" class="active">Sign Up</a></li>
+        <li class="dropdown">
+          <a href="index.html#modules" class="nav-cta">Skill Modules</a>
+          <div class="dropdown-menu">
+            <a href="html-css.html">HTML &amp; CSS <small>01</small></a>
+            <a href="javascript.html">JavaScript Fundamentals <small>02</small></a>
+            <a href="python.html">Python Programming <small>03</small></a>
+            <a href="design.html">Graphic Design &amp; UI/UX <small>04</small></a>
+            <a href="cybersecurity.html">Cybersecurity Awareness <small>05</small></a>
+            <a href="data-science.html">Data Science Basics <small>06</small></a>
+            <a href="digital-literacy.html">Digital Literacy &amp; Safety <small>07</small></a>
+            <a href="entrepreneurship.html">Tech Entrepreneurship <small>08</small></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="subhero">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a> / Sign Up</div>
+      <span class="subhero-tag">Now Enrolling · Class of 2026</span>
+      <h1>Tell us who you are.<br>We'll <span class="highlight">handle the rest.</span></h1>
+      <p class="lede">Two minutes to fill out. No cost, no experience required. A DG·IP mentor will follow up by email once your form comes through.</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="wrap">
+      <div class="form-shell">
+        <div class="form-shell-head">
+          <span class="eyebrow">Membership Form</span>
+          <h1>Join Digital Girls Initiative Pakistan</h1>
+          <p>Every field helps us place you in the right cohort and the right skill track — please answer as accurately as you can.</p>
+        </div>
+
+        <div class="form-body">
+          <!--
+            BACKEND NOTE FOR THE DEVELOPER (remove this comment before publishing):
+            This is a static HTML page, so it cannot send emails on its own — a browser
+            can't talk to an SMTP server directly. The <form> below is wired to submit
+            to a form-backend endpoint (Formspree shown as the example) which turns each
+            submission into an instant email to your admin inbox. To activate it:
+              1. Create a free account at https://formspree.io (or Getform, Basin, EmailJS).
+              2. Create a new form there and set the notification email to your admin address.
+              3. Copy the endpoint URL Formspree gives you (looks like
+                 https://formspree.io/f/xxxxxxxx) and paste it into the form's
+                 action="" attribute below, replacing YOUR_FORM_ENDPOINT.
+              4. That's it — every submission is emailed to you in real time, and the
+                 page shows the on-page success message via the fetch() call in the
+                 script at the bottom of this file.
+            Zapier alternative: point action="" at a Zapier "Catch Hook" webhook URL
+            instead, then add a Zapier step that emails the captured fields to your admin.
+          -->
+          <form id="signupForm" action="https://formspree.io/f/YOUR_FORM_ENDPOINT" method="POST">
+
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="Full Name" placeholder="e.g. Ayesha Khan" required>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="Email" placeholder="you@example.com" required>
+              </div>
+              <div class="field">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="Age" min="10" max="100" placeholder="e.g. 16" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="education">Current Education Level</label>
+              <select id="education" name="Education Level" required>
+                <option value="" disabled selected>Select your current level</option>
+                <option>Middle School (Grade 6–8)</option>
+                <option>Matric / O-Levels (Grade 9–10)</option>
+                <option>FSc / Intermediate / A-Levels</option>
+                <option>Undergraduate</option>
+                <option>Graduate</option>
+                <option>Not currently enrolled</option>
+              </select>
+              <span class="hint">This helps us match you with a cohort of peers at a similar stage.</span>
+            </div>
+
+            <div class="field">
+              <label>Desired Tech Skill(s)</label>
+              <span class="hint">Select every track you'd like to learn — you can start more than one.</span>
+              <div class="check-grid">
+                <label class="check-item"><input type="checkbox" name="Desired Skills" value="HTML & CSS"> HTML &amp; CSS</label>
+                <label class="check-item"><input type="checkbox" name="Desired Skills" value="JavaScript Fundamentals"> JavaScript Fundamentals</label>
+                <label class="check-item"><input type="checkbox" name="Desired Skills" value="Python Programming"> Python Programming</label>
+                <label class="check-item"><input type="checkbox" name="Desired Skills" value="Graphic Design & UI/UX"> Graphic Design &amp; UI/UX</label>
+                <label class="check-item"><input type="checkbox" name="Desired Skills" value="Cybersecurity Awareness"> Cybersecurity Awareness</label>
+                <label class="check-item"><input type="checkbox" name="Desired Skills" value="Data Science Basics"> Data Science Basics</label>
+                <label class="check-item"><input type="checkbox" name="Desired Skills" value="Digital Literacy & Internet Safety"> Digital Literacy &amp; Internet Safety</label>
+                <label class="check-item"><input type="checkbox" name="Desired Skills" value="Tech Entrepreneurship"> Tech Entrepreneurship</label>
+              </div>
+            </div>
+
+            <input type="hidden" name="_subject" value="New DG·IP Sign-Up">
+
+            <button type="submit" class="btn btn--primary form-submit">Submit Application →</button>
+
+            <p class="form-note">
+              By submitting, your responses are sent directly and immediately to the DG·IP admin team
+              by email so a mentor can reach out. We never sell or share your information.
+            </p>
+          </form>
+
+          <div class="success-msg" id="successMsg">
+            <h3>You're in, <span id="successName">friend</span>! 🎉</h3>
+            <p>Your application has been emailed to our team. Check your inbox in the next few days for your welcome message and cohort details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>DG·IP</h4>
+          <p>Digital Girls Initiative Pakistan is a non-profit teaching young women the tech skills that open doors — free, forever.</p>
+        </div>
+        <div class="footer-col">
+          <p class="head">Navigate</p>
+          <a href="index.html">Home</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="index.html#modules">Skill Modules</a>
+        </div>
+        <div class="footer-col">
+          <p class="head">Skill Modules</p>
+          <a href="html-css.html">HTML &amp; CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="python.html">Python</a>
+          <a href="design.html">UI/UX Design</a>
+        </div>
+        <div class="footer-col">
+          <p class="head">More Modules</p>
+          <a href="cybersecurity.html">Cybersecurity</a>
+          <a href="data-science.html">Data Science</a>
+          <a href="digital-literacy.html">Digital Literacy</a>
+          <a href="entrepreneurship.html">Entrepreneurship</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Digital Girls Initiative Pakistan. All rights reserved.</span>
+        <span>Built for the next generation of builders.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    const form = document.getElementById('signupForm');
+    const successMsg = document.getElementById('successMsg');
+    const successName = document.getElementById('successName');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const nameVal = document.getElementById('fullName').value.trim().split(' ')[0] || 'friend';
+      const data = new FormData(form);
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          successName.textContent = nameVal;
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+          successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          alert('Something went wrong submitting the form. Please try again or email us directly.');
+        }
+      } catch (err) {
+        alert('Could not reach the form service. Check your connection, or the form endpoint has not been configured yet.');
+      }
+    });
+  </script>
+
+</body>
+</html>

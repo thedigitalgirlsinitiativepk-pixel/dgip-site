@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Science Basics — Digital Girls Initiative Pakistan</title>
+<meta name="description" content="Turn raw numbers into real insight — the skillset behind every 'data-driven' decision.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span><span class="tag">✦</span>DIGITAL GIRLS INITIATIVE · PAKISTAN</span>
+      <span>EMPOWERING WOMEN THROUGH TECH</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="logo">DG<span>·</span>IP</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li class="dropdown">
+          <a href="index.html#modules" class="nav-cta">Skill Modules</a>
+          <div class="dropdown-menu">
+            <a href="html-css.html">HTML & CSS <small>01</small></a>
+            <a href="javascript.html">JavaScript Fundamentals <small>02</small></a>
+            <a href="python.html">Python Programming <small>03</small></a>
+            <a href="design.html">Graphic Design & UI/UX <small>04</small></a>
+            <a href="cybersecurity.html">Cybersecurity Awareness <small>05</small></a>
+            <a href="data-science.html">Data Science Basics <small>06</small></a>
+            <a href="digital-literacy.html">Digital Literacy & Safety <small>07</small></a>
+            <a href="entrepreneurship.html">Tech Entrepreneurship <small>08</small></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="subhero">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a> / <a href="index.html#modules">Skill Modules</a> / Data Science Basics</div>
+      <span class="subhero-tag">Module 06 · Data</span>
+      <h1>Data Science Basics</h1>
+      <p class="lede">Turn raw numbers into real insight — the skillset behind every 'data-driven' decision.</p>
+      <div class="subhero-meta">
+        <span>8–10 weeks · 5–7 hrs/week</span>
+        <span>Basic Python recommended</span>
+        <span>4 Learning Phases</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-body">
+    <div class="page-grid">
+      <aside class="toc">
+        <p class="head">On This Page</p>
+        <a href="#roadmap">The Roadmap</a>
+          <a href="#phase-1">Phase 01 — Foundations</a>
+          <a href="#phase-2">Phase 02 — Python for Data</a>
+          <a href="#phase-3">Phase 03 — Visualization & Analysis</a>
+          <a href="#phase-4">Phase 04 — Intro to Machine Learning</a>
+        <a href="#videos">Free Video Courses</a>
+        <a href="#ebook">Download the E-Book</a>
+      </aside>
+
+      <div class="content">
+        <p>Data science is the practice of asking questions of data and finding honest answers — a skill used everywhere from public health to business to sports. This track starts with statistics fundamentals, moves through Python's most-used data libraries, and ends with a first taste of machine learning.</p>
+        <div class="taglist">
+        <span>Builds on Python</span>
+        <span>Real Datasets</span>
+        <span>First ML Model</span>
+        <span>4 Phases</span>
+        </div>
+
+        <div class="callout"><strong>Mentor Tip</strong>Always plot your data before you model it — a five-second chart often reveals what an hour of code would miss.</div>
+
+        <h2 id="roadmap">The Roadmap</h2>
+      <div class="phase" id="phase-1">
+        <div class="phase-head">
+          <span class="phase-num">01</span>
+          <div><h3>Foundations<small>Thinking like a data scientist</small></h3></div>
+        </div>
+        <div class="phase-body">
+          <p>Before any code, this phase builds the statistical intuition that makes every later tool make sense.</p>
+          <div class="phase-steps">
+          <div class="step">
+            <span class="step-check">01</span>
+            <div><strong>What data science actually is</strong><span>The difference between data analysis, data science, and machine learning.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">02</span>
+            <div><strong>Statistics basics</strong><span>Mean, median, mode, and standard deviation — the vocabulary of every dataset.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">03</span>
+            <div><strong>From spreadsheets to code</strong><span>Why code eventually beats spreadsheets for serious analysis.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">04</span>
+            <div><strong>Asking good questions</strong><span>The most underrated data science skill: framing a clear, answerable question.</span></div>
+          </div>
+          </div>
+          <div class="phase-project"><strong>Practice Project</strong>Take any spreadsheet of data you have access to and write down five questions you could ask of it.</div>
+        </div>
+      </div>
+      <div class="phase" id="phase-2">
+        <div class="phase-head">
+          <span class="phase-num">02</span>
+          <div><h3>Python for Data<small>The core toolkit</small></h3></div>
+        </div>
+        <div class="phase-body">
+          <p>Two libraries — NumPy and pandas — do the vast majority of real-world data work in Python.</p>
+          <div class="phase-steps">
+          <div class="step">
+            <span class="step-check">01</span>
+            <div><strong>NumPy basics</strong><span>Fast numerical arrays, the foundation everything else is built on.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">02</span>
+            <div><strong>pandas DataFrames</strong><span>Loading, viewing, and slicing tabular data like a spreadsheet in code.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">03</span>
+            <div><strong>Cleaning messy data</strong><span>Handling missing values, duplicates, and inconsistent formatting.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">04</span>
+            <div><strong>Grouping & aggregating</strong><span>Summarizing data by category — the pandas equivalent of a pivot table.</span></div>
+          </div>
+          </div>
+          <div class="phase-project"><strong>Practice Project</strong>Load a public CSV dataset (e.g. from Kaggle) and produce a clean summary table by category.</div>
+        </div>
+      </div>
+      <div class="phase" id="phase-3">
+        <div class="phase-head">
+          <span class="phase-num">03</span>
+          <div><h3>Visualization & Analysis<small>Making data speak</small></h3></div>
+        </div>
+        <div class="phase-body">
+          <p>A great chart communicates an insight in seconds — this phase teaches you to build ones that do.</p>
+          <div class="phase-steps">
+          <div class="step">
+            <span class="step-check">01</span>
+            <div><strong>Matplotlib basics</strong><span>Line charts, bar charts, and histograms from scratch.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">02</span>
+            <div><strong>Seaborn for polish</strong><span>Statistically-aware charts with far less code.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">03</span>
+            <div><strong>Exploratory data analysis</strong><span>A repeatable process for getting to know any new dataset.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">04</span>
+            <div><strong>Drawing honest conclusions</strong><span>Avoiding the most common ways charts mislead, even accidentally.</span></div>
+          </div>
+          </div>
+          <div class="phase-project"><strong>Practice Project</strong>Produce a 3-chart mini-report on a dataset of your choice, with one written insight per chart.</div>
+        </div>
+      </div>
+      <div class="phase" id="phase-4">
+        <div class="phase-head">
+          <span class="phase-num">04</span>
+          <div><h3>Intro to Machine Learning<small>Your first predictive model</small></h3></div>
+        </div>
+        <div class="phase-body">
+          <p>This phase is a gentle first step into machine learning — enough to understand what it is and build one real model.</p>
+          <div class="phase-steps">
+          <div class="step">
+            <span class="step-check">01</span>
+            <div><strong>Core ML concepts</strong><span>Training data, features, and predictions, explained without the jargon.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">02</span>
+            <div><strong>scikit-learn basics</strong><span>The standard, beginner-friendly Python ML library.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">03</span>
+            <div><strong>Your first model</strong><span>Training a simple regression or classification model.</span></div>
+          </div>
+          <div class="step">
+            <span class="step-check">04</span>
+            <div><strong>Evaluating a model</strong><span>Understanding whether your model is actually any good.</span></div>
+          </div>
+          </div>
+          <div class="phase-project"><strong>Practice Project</strong>Train a simple model to predict a value in a beginner Kaggle dataset (e.g. house prices or Titanic survival).</div>
+        </div>
+      </div>
+
+        <h2 id="videos">Free Video Courses</h2>
+        <p>Curated, highly-rated, and free — pick whichever teaching style matches how you learn best.</p>
+        <div class="video-grid">
+        <a class="video-card " href="https://www.freecodecamp.org/learn/data-analysis-with-python/" target="_blank" rel="noopener">
+          <span class="video-play">▶</span>
+          <div class="video-info"><strong>freeCodeCamp — Data Analysis with Python</strong><span>Full certification, pandas and NumPy from scratch</span></div>
+        </a>
+        <a class="video-card alt" href="https://www.kaggle.com/learn" target="_blank" rel="noopener">
+          <span class="video-play">▶</span>
+          <div class="video-info"><strong>Kaggle Learn — Micro-Courses</strong><span>Bite-sized, hands-on lessons directly in your browser</span></div>
+        </a>
+        <a class="video-card alt2" href="https://www.khanacademy.org/math/statistics-probability" target="_blank" rel="noopener">
+          <span class="video-play">▶</span>
+          <div class="video-info"><strong>Khan Academy — Statistics & Probability</strong><span>The clearest free foundation in the underlying math</span></div>
+        </a>
+        <a class="video-card alt" href="https://www.youtube.com/@statquest" target="_blank" rel="noopener">
+          <span class="video-play">▶</span>
+          <div class="video-info"><strong>StatQuest with Josh Starmer</strong><span>Statistics and ML concepts explained with unmatched clarity</span></div>
+        </a>
+        </div>
+
+        <h2 id="ebook">Download the E-Book</h2>
+        <div class="ebook-band">
+          <div class="ebook-cover"><svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <rect x="18" y="10" width="150" height="210" fill="#1B1913"/>
+  <rect x="10" y="4" width="150" height="210" fill="#EF5A28" stroke="#1B1913" stroke-width="3"/>
+  <rect x="10" y="4" width="150" height="210" fill="none" stroke="#1B1913" stroke-width="3"/>
+  <rect x="10" y="4" width="18" height="210" fill="#C7431A"/>
+  <rect x="40" y="36" width="94" height="10" fill="#FCF3DD"/>
+  <rect x="40" y="54" width="70" height="8" fill="#FCF3DD" opacity="0.85"/>
+  <circle cx="85" cy="120" r="34" fill="#F3C2D6" stroke="#1B1913" stroke-width="3"/>
+  <text x="85" y="129" font-family="Georgia, serif" font-weight="700" font-size="26" fill="#1B1913" text-anchor="middle">DG</text>
+  <rect x="40" y="176" width="94" height="7" fill="#FCF3DD" opacity="0.7"/>
+  <rect x="40" y="190" width="60" height="7" fill="#FCF3DD" opacity="0.7"/>
+  <rect x="10" y="4" width="150" height="210" fill="none" stroke="#1B1913" stroke-width="3"/>
+</svg></div>
+          <div class="ebook-text">
+            <span class="eyebrow">Custom AI-Generated Guide</span>
+            <h3>The DG·IP Data Science Basics Companion</h3>
+            <p>A free, printable e-book built for this exact module — the full roadmap, every phase's steps, and extra practice prompts, in one downloadable PDF.</p>
+            <a class="btn btn--primary" href="ebooks/data-science.pdf" download>Download the E-Book (PDF) ↓</a>
+          </div>
+        </div>
+
+        <div class="next-module">
+          <div>
+            <span class="label">Next Module · 07</span>
+            <h4>Digital Literacy & Internet Safety</h4>
+          </div>
+          <a class="btn btn--dark" href="digital-literacy.html">Continue Learning →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>DG·IP</h4>
+          <p>Digital Girls Initiative Pakistan is a non-profit teaching young women the tech skills that open doors — free, forever.</p>
+        </div>
+        <div class="footer-col">
+          <p class="head">Navigate</p>
+          <a href="index.html">Home</a>
+          <a href="signup.html">Sign Up</a>
+          <a href="index.html#modules">Skill Modules</a>
+        </div>
+        <div class="footer-col">
+          <p class="head">Skill Modules</p>
+          <a href="html-css.html">HTML &amp; CSS</a>
+          <a href="javascript.html">JavaScript</a>
+          <a href="python.html">Python</a>
+          <a href="design.html">UI/UX Design</a>
+        </div>
+        <div class="footer-col">
+          <p class="head">More Modules</p>
+          <a href="cybersecurity.html">Cybersecurity</a>
+          <a href="data-science.html">Data Science</a>
+          <a href="digital-literacy.html">Digital Literacy</a>
+          <a href="entrepreneurship.html">Entrepreneurship</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Digital Girls Initiative Pakistan. All rights reserved.</span>
+        <span>Built for the next generation of builders.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>
