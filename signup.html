@@ -61,24 +61,8 @@
         </div>
 
         <div class="form-body">
-          <!--
-            BACKEND NOTE FOR THE DEVELOPER (remove this comment before publishing):
-            This is a static HTML page, so it cannot send emails on its own — a browser
-            can't talk to an SMTP server directly. The <form> below is wired to submit
-            to a form-backend endpoint (Formspree shown as the example) which turns each
-            submission into an instant email to your admin inbox. To activate it:
-              1. Create a free account at https://formspree.io (or Getform, Basin, EmailJS).
-              2. Create a new form there and set the notification email to your admin address.
-              3. Copy the endpoint URL Formspree gives you (looks like
-                 https://formspree.io/f/xxxxxxxx) and paste it into the form's
-                 action="" attribute below, replacing YOUR_FORM_ENDPOINT.
-              4. That's it — every submission is emailed to you in real time, and the
-                 page shows the on-page success message via the fetch() call in the
-                 script at the bottom of this file.
-            Zapier alternative: point action="" at a Zapier "Catch Hook" webhook URL
-            instead, then add a Zapier step that emails the captured fields to your admin.
-          -->
-          <form id="signupForm" action="https://formspree.io/f/YOUR_FORM_ENDPOINT" method="POST">
+        
+          <form id="signupForm" action="https://formspree.io/f/maenovzw" method="POST">
 
             <div class="field">
               <label for="fullName">Full Name</label>
