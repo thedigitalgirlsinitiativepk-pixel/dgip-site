@@ -19,7 +19,8 @@ section{position:relative}
 .topbar .tag{color:var(--orange);margin-right:4px}
 .nav{border-bottom:2px solid var(--line);background:var(--cream);position:sticky;top:0;z-index:50}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 32px}
-.logo{font-family:var(--font-display);font-weight:900;font-size:26px}.logo span{color:var(--orange)}
+.logo{font-family:var(--font-display);font-weight:900;font-size:26px;display:inline-flex;align-items:center;gap:10px}.logo span{color:var(--orange)}
+.logo-mark{width:28px;height:28px;border-radius:6px;display:block;flex-shrink:0}
 .nav-links{display:flex;align-items:center;gap:6px}
 .nav-links a{font-weight:600;font-size:14px;padding:10px 14px}
 .nav-links a.active{background:var(--ink);color:var(--cream)}

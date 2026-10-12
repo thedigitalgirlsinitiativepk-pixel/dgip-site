@@ -1,0 +1,24 @@
+{
+  "name": "Digital Girls Initiative Pakistan",
+  "short_name": "DG·IP",
+  "description": "Free tech skills for girls and young women in Pakistan — coding, design, cybersecurity, data science, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FCF3DD",
+  "theme_color": "#EF5A28",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
