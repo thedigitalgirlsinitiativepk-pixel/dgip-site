@@ -75,8 +75,82 @@
 <div class="sec-head"><span class="eyebrow">Pricing, transparently</span><h2>Learning is free. Printing is not.</h2><p class="lead">We never charge for knowledge or for reviewing your work. The fee only covers the physical object we make and ship to you.</p></div>
 <div class="prices">
 <div class="price price--free"><span class="acc-tag">Always free</span><div class="price-num">Rs. 0</div><ul><li>All roadmaps, video courses and e-books</li><li>Project review and feedback from the DG·IP team</li><li>Approval of your project</li></ul></div>
-<div class="price price--paid"><span class="acc-tag">Physical certificate</span><div class="price-num">Rs. 300</div><ul><li>Printing on premium cardstock</li><li>Custom certificate ID branding</li><li>Door delivery to your address</li></ul><p class="note">Once your project is approved, we will email you the payment and delivery details.</p></div>
-</div></div></section>
+<div class="price price--paid"><span class="acc-tag">Physical certificate</span><div class="price-num">Rs. 300</div><ul><li>Printing on premium cardstock</li><li>Custom certificate ID branding</li><li>Door delivery to your address</li></ul><p class="note">After your project is approved, pay via EasyPaisa below and upload your payment screenshot.</p></div>
+</div>
+
+<div class="pay-block" id="payment">
+  <div class="pay-head">
+    <span class="eyebrow">Payment</span>
+    <h3>Pay with EasyPaisa</h3>
+    <p class="lead">Send <strong>Rs. 300</strong> to the account below, then upload a screenshot of the successful transfer so we can print and ship your certificate.</p>
+  </div>
+
+  <div class="pay-grid">
+    <div class="pay-card">
+      <p class="pay-label">Send payment to</p>
+      <div class="pay-row">
+        <span class="pay-key">Account name</span>
+        <strong class="pay-val">RUQIA ASHRAF</strong>
+      </div>
+      <div class="pay-row">
+        <span class="pay-key">EasyPaisa number</span>
+        <div class="pay-num-row">
+          <strong class="pay-val" id="epNumber">03278517806</strong>
+          <button type="button" class="btn btn--pink pay-copy" id="copyEp" aria-label="Copy EasyPaisa number">Copy</button>
+        </div>
+      </div>
+      <div class="pay-row">
+        <span class="pay-key">Amount</span>
+        <strong class="pay-val">Rs. 300</strong>
+      </div>
+      <p class="pay-hint">In EasyPaisa, choose <em>Send Money</em>, enter the number above, and confirm the name shows as <strong>RUQIA ASHRAF</strong> before you send.</p>
+    </div>
+
+    <div class="pay-card pay-card--form">
+      <p class="pay-label">Upload payment screenshot</p>
+      <form id="paymentForm" action="https://formspree.io/f/maenovzw" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="[DGIP Certificate] Payment screenshot">
+        <div class="pay-field">
+          <label for="payName">Full name</label>
+          <input type="text" id="payName" name="Full Name" placeholder="Same name as on your project email" required>
+        </div>
+        <div class="pay-field">
+          <label for="payEmail">Email</label>
+          <input type="email" id="payEmail" name="Email" placeholder="you@example.com" required>
+        </div>
+        <div class="pay-field">
+          <label for="payTrack">Certificate track</label>
+          <select id="payTrack" name="Track" required>
+            <option value="" disabled selected>Select your track</option>
+            <option>Python Programming</option>
+            <option>Web Development</option>
+            <option>HTML &amp; CSS</option>
+          </select>
+        </div>
+        <div class="pay-field">
+          <label for="payPhone">WhatsApp number</label>
+          <input type="tel" id="payPhone" name="WhatsApp" placeholder="03XXXXXXXXX" required>
+        </div>
+        <div class="pay-field">
+          <label for="payAddress">Delivery address</label>
+          <textarea id="payAddress" name="Delivery Address" rows="3" placeholder="House / street, city, postal code" required></textarea>
+        </div>
+        <div class="pay-field">
+          <label for="payShot">Payment screenshot</label>
+          <input type="file" id="payShot" name="Payment Screenshot" accept="image/*,.pdf" required>
+          <span class="pay-file-hint">PNG, JPG or PDF · max ~5 MB</span>
+        </div>
+        <button type="submit" class="btn btn--primary form-submit" id="paySubmit">Submit payment proof →</button>
+        <p class="pay-note">Your details and screenshot are emailed to the DG·IP team. We confirm by email once payment is verified.</p>
+      </form>
+      <div class="pay-success" id="paySuccess" hidden>
+        <h3>Payment proof received ✓</h3>
+        <p>Thank you. We will verify your EasyPaisa transfer and email you about printing and delivery.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div></section>
 
 <section class="sec sec--dark" id="verify"><div class="wrap verify">
 <div><span class="eyebrow">Verification guarantee</span><h2>Every certificate can be checked.</h2>

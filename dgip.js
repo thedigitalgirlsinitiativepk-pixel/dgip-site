@@ -16,4 +16,36 @@ document.addEventListener('DOMContentLoaded',function(){
     var body=tpl.innerText.split('\n').slice(3).join('\n').trim();
     m.href='mailto:thedigitalgirlsinitiativepk@gmail.com?subject='+encodeURIComponent('[DGIP Certificate] <Track> - <Your Full Name>')+'&body='+encodeURIComponent(body);
   }
+
+  var copyEp=document.getElementById('copyEp');
+  var epNumber=document.getElementById('epNumber');
+  if(copyEp&&epNumber){
+    copyEp.addEventListener('click',function(){
+      var n=epNumber.textContent.trim();
+      var done=function(){copyEp.textContent='Copied ✓';setTimeout(function(){copyEp.textContent='Copy';},1600);};
+      if(navigator.clipboard)navigator.clipboard.writeText(n).then(done,done);else done();
+    });
+  }
+
+  var payForm=document.getElementById('paymentForm');
+  var paySuccess=document.getElementById('paySuccess');
+  var paySubmit=document.getElementById('paySubmit');
+  if(payForm&&paySuccess){
+    payForm.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(paySubmit){paySubmit.disabled=true;paySubmit.textContent='Sending…';}
+      var data=new FormData(payForm);
+      fetch(payForm.action,{method:'POST',body:data,headers:{'Accept':'application/json'}})
+        .then(function(res){
+          if(!res.ok)throw new Error('submit failed');
+          payForm.hidden=true;
+          paySuccess.hidden=false;
+          paySuccess.scrollIntoView({behavior:'smooth',block:'center'});
+        })
+        .catch(function(){
+          alert('Could not send the form. Please email your payment screenshot to thedigitalgirlsinitiativepk@gmail.com with your name and track.');
+          if(paySubmit){paySubmit.disabled=false;paySubmit.textContent='Submit payment proof →';}
+        });
+    });
+  }
 });
