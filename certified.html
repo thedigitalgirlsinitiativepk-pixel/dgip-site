@@ -1,64 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Certified | Digital Girls Initiative Pakistan</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Certified | Digital Girls Initiative Pakistan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dgip.css">
 </head>
-<body class="bg-[#0a0a0a] text-gray-100 font-sans min-h-screen">
+<body>
+<div class="topbar"><div class="wrap"><span><span class="tag">✦</span>DIGITAL GIRLS INITIATIVE · PAKISTAN</span><span>EMPOWERING WOMEN THROUGH TECH</span></div></div>
+<nav class="nav"><div class="wrap">
+<a href="index.html" class="logo">DG<span>·</span>IP</a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="certified.html" class="active">Get Certified</a></li>
+<li><a href="competitions.html">Competitions</a></li>
+<li><a href="classes.html">Live Classes</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li class="dropdown"><a href="index.html#modules" class="nav-cta">Skill Modules</a>
+<div class="dropdown-menu">
+<a href="html-css.html">HTML &amp; CSS <small>01</small></a>
+<a href="javascript.html">JavaScript Fundamentals <small>02</small></a>
+<a href="python.html">Python Programming <small>03</small></a>
+<a href="design.html">Graphic Design &amp; UI/UX <small>04</small></a>
+<a href="cybersecurity.html">Cybersecurity Awareness <small>05</small></a>
+<a href="data-science.html">Data Science Basics <small>06</small></a>
+<a href="digital-literacy.html">Digital Literacy &amp; Safety <small>07</small></a>
+<a href="entrepreneurship.html">Tech Entrepreneurship <small>08</small></a>
+</div></li>
+</ul></div></nav>
+<header class="phero"><div class="wrap">
+<p class="crumbs"><a href="index.html">Home</a> / Programs / Get Certified</p>
+<h1>A certificate you <em>earn</em> with <span class="block">proof of work.</span></h1>
+<p>Our certificates are project-verified. You do not get one for watching videos. You get one for building something real and showing us the code.</p>
+<div class="chips"><span class="on">Project-verified</span><span>Learning &amp; review: free</span><span>Unique verification ID</span><span>Delivered to your door</span></div>
+<div class="hero-actions"><a href="#requirements" class="btn btn--primary">See project requirements →</a><a href="#submit" class="btn btn--pink">How to submit</a></div>
+</div></header>
 
-    <nav class="border-b border-gray-800 bg-[#0a0a0a]/80 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
-        <a href="index.html" class="text-xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Digital Girls Initiative PK</a>
-        <div class="flex gap-6 text-sm font-medium text-gray-300">
-            <a href="index.html" class="hover:text-purple-400 transition">Home</a>
-            <a href="certified.html" class="text-purple-400">Get Certified</a>
-            <a href="competitions.html" class="hover:text-purple-400 transition">Competitions</a>
-            <a href="classes.html" class="hover:text-purple-400 transition">Live Classes</a>
-            <a href="signup.html" class="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg transition">Sign Up</a>
-        </div>
-    </nav>
+<section class="sec" id="how"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">How it works</span><h2>Four steps from roadmap to doorstep.</h2><p class="lead">Every step is free except the final printing and delivery. Work at your own pace; there is no deadline.</p></div>
+<div class="steps">
+<div class="step"><div class="step-num">01</div><h3>Choose a roadmap</h3><p>Pick Python, Web Development, or HTML &amp; CSS and follow the free phase-by-phase guide, videos and e-book for that skill.</p></div>
+<div class="step"><div class="step-num">02</div><h3>Build the capstone</h3><p>Create the project below. It must meet every requirement for your track. No shortcuts, no templates.</p></div>
+<div class="step"><div class="step-num">03</div><h3>Submit your code</h3><p>Email us your GitHub link or a zip file using the format in the submission box below.</p></div>
+<div class="step"><div class="step-num">04</div><h3>Receive your certificate</h3><p>Once your project is approved, your physical certificate is printed and delivered to your doorstep.</p></div>
+</div></div></section>
 
-    <main class="max-w-4xl mx-auto px-6 py-12">
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Project-Verified Certifications</h1>
-            <p class="text-gray-400 max-w-xl mx-auto">Earn a physical, verifiable certificate to prove your technical proficiency for university applications, CVs, and international scholarships.</p>
-        </div>
+<section class="sec sec--yellow" id="requirements"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Project requirements</span><h2>What your capstone must include.</h2><p class="lead">Tap a track to see its exact checklist. If your project ticks every box, it passes.</p></div>
 
-        <div class="grid md:grid-cols-3 gap-6 mb-12">
-            <div class="bg-[#121212] border border-gray-800 p-6 rounded-xl">
-                <div class="text-purple-400 font-bold text-xl mb-2">01. Build</div>
-                <h3 class="font-semibold mb-2">Complete a Track</h3>
-                <p class="text-sm text-gray-400">Pick a roadmap like Python or Web Dev and build your original capstone project.</p>
-            </div>
-            <div class="bg-[#121212] border border-gray-800 p-6 rounded-xl">
-                <div class="text-purple-400 font-bold text-xl mb-2">02. Submit</div>
-                <h3 class="font-semibold mb-2">Send Code via Email</h3>
-                <p class="text-sm text-gray-400">Send your original code script or GitHub repository link to our official review email.</p>
-            </div>
-            <div class="bg-[#121212] border border-gray-800 p-6 rounded-xl">
-                <div class="text-purple-400 font-bold text-xl mb-2">03. Receive</div>
-                <h3 class="font-semibold mb-2">Get Physical Copy</h3>
-                <p class="text-sm text-gray-400">Once verified, your physical certificate with a unique tracking ID is delivered to your doorstep.</p>
-            </div>
-        </div>
+<div class="acc"><button class="acc-head" aria-expanded="true"><span class="acc-tag">DGIP-PY</span><span class="acc-name">Python Programming</span><span class="acc-meta">Beginner to Intermediate · 2 to 3 weeks</span><span class="acc-btn">−</span></button>
+<div class="acc-body"><p>Build a working command-line program that solves a real problem, written the way a professional would write it.</p>
+<p class="acc-label">Your project must</p>
+<ul class="checks"><li>The program must run without errors from start to finish on a clean machine.</li><li>Use at least 4 functions, each with a single clear purpose and a docstring.</li><li>Handle bad input with try/except so the program never crashes on a typo.</li><li>Use lists or dictionaries to store and process data.</li><li>Write a README that explains what the program does, how to run it, and one example of its output.</li><li>Use clear variable names and comments where the logic is not obvious.</li></ul>
+<p class="acc-label">What to submit</p><div class="submit-box">A GitHub link (or a zip file) containing your .py file(s) and your README.</div></div></div>
 
-        <div class="bg-[#121212] border border-gray-800 p-8 rounded-xl mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-purple-300">Project Requirements & Guidelines</h2>
-            <ul class="space-y-3 text-gray-300 text-sm list-disc pl-5">
-                <li><strong>Original Code Only:</strong> Copied or plagiarized code submissions will be automatically rejected. We perform manual verification.</li>
-                <li><strong>Documentation:</strong> Include a short README file or comments explaining how your script/application functions.</li>
-                <li><strong>Submission Format:</strong> Email your files or repository link to <span class="text-cyan-400">verify@dgip.pk</span> with your full name and track name.</li>
-            </ul>
-        </div>
+<div class="acc"><button class="acc-head" aria-expanded="false"><span class="acc-tag">DGIP-WD</span><span class="acc-name">Web Development</span><span class="acc-meta">Intermediate · 3 to 4 weeks</span><span class="acc-btn">+</span></button>
+<div class="acc-body" hidden><p>Build a multi-page, responsive website that you could show to a real client.</p>
+<p class="acc-label">Your project must</p>
+<ul class="checks"><li>Have at least 3 linked pages that share one consistent navigation and style.</li><li>Look right on both a phone and a desktop screen (flexbox, grid, or media queries).</li><li>Use semantic HTML such as header, main, section and footer.</li><li>Include at least one working JavaScript feature, such as a form check, menu or filter.</li><li>Be live online (GitHub Pages or similar) and have a README explaining the project.</li></ul>
+<p class="acc-label">What to submit</p><div class="submit-box">A GitHub link, your live link, and your README.</div></div></div>
 
-        <div class="bg-gradient-to-r from-purple-900/20 to-cyan-900/20 border border-purple-500/30 p-8 rounded-xl text-center">
-            <h3 class="text-xl font-bold mb-2">Certificate Fee: Rs. 300</h3>
-            <p class="text-sm text-gray-300 mb-6">Learning roadmaps and code reviews are 100% free. The Rs. 300 fee strictly covers premium cardstock printing, secure packaging, and doorstep delivery across Pakistan.</p>
-            <a href="signup.html" class="inline-block bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-medium px-8 py-3 rounded-xl hover:opacity-90 transition">Request Certificate Verification</a>
-        </div>
-    </main>
+<div class="acc"><button class="acc-head" aria-expanded="false"><span class="acc-tag">DGIP-HC</span><span class="acc-name">HTML &amp; CSS</span><span class="acc-meta">Beginner · 1 to 2 weeks</span><span class="acc-btn">+</span></button>
+<div class="acc-body" hidden><p>Build a single-page website from scratch, with no templates.</p>
+<p class="acc-label">Your project must</p>
+<ul class="checks"><li>Use a clean HTML structure with headings, paragraphs, lists and images with alt text.</li><li>Keep your styles in a separate .css file.</li><li>Use flexbox or grid for at least one section of the layout.</li><li>Use a consistent set of colours and fonts across the page.</li><li>Include a short README or comments explaining your choices.</li></ul>
+<p class="acc-label">What to submit</p><div class="submit-box">A GitHub link (or a zip file) containing your .html and .css files and your README.</div></div></div>
+</div></section>
 
+<section class="sec" id="pricing"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Pricing, transparently</span><h2>Learning is free. Printing is not.</h2><p class="lead">We never charge for knowledge or for reviewing your work. The fee only covers the physical object we make and ship to you.</p></div>
+<div class="prices">
+<div class="price price--free"><span class="acc-tag">Always free</span><div class="price-num">Rs. 0</div><ul><li>All roadmaps, video courses and e-books</li><li>Project review and feedback from the DG·IP team</li><li>Approval of your project</li></ul></div>
+<div class="price price--paid"><span class="acc-tag">Physical certificate</span><div class="price-num">Rs. 300</div><ul><li>Printing on premium cardstock</li><li>Custom certificate ID branding</li><li>Door delivery to your address</li></ul><p class="note">Once your project is approved, we will email you the payment and delivery details.</p></div>
+</div></div></section>
+
+<section class="sec sec--dark" id="verify"><div class="wrap verify">
+<div><span class="eyebrow">Verification guarantee</span><h2>Every certificate can be checked.</h2>
+<p class="lead">Each physical certificate carries its own Verification ID. Add it to your CV and LinkedIn. A university, employer or scholarship committee can email us the ID and we will confirm it was issued, for which track, and when.</p>
+<small>DG·IP certificates are project-based credentials that show what you built. They are not an accredited degree or diploma. To verify an ID, write to <a href="mailto:thedigitalgirlsinitiativepk@gmail.com">thedigitalgirlsinitiativepk@gmail.com</a>.</small></div>
+<div class="idbox"><p class="k">Your verification ID looks like</p><p class="id">DGIP-PY-XXXX</p><p class="legend">PY = Python · WD = Web Dev · HC = HTML &amp; CSS</p></div>
+</div></section>
+
+<section class="sec" id="submit"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Submission box</span><h2>How to send us your project.</h2><p class="lead">One email, in the right format, and we can review it fast.</p></div>
+<div class="submit">
+<div>
+<div class="srow"><span class="lbl">Send to</span><a href="mailto:thedigitalgirlsinitiativepk@gmail.com">thedigitalgirlsinitiativepk@gmail.com</a></div>
+<div class="srow"><span class="lbl">Subject</span><div><strong>[DGIP Certificate] Track - Your Full Name</strong><br>Example: [DGIP Certificate] Python - Ayesha Khan</div></div>
+<div class="srow"><span class="lbl">Attach</span><div>A GitHub link, or one .zip file under 20 MB. Web tracks also need a live link.</div></div>
+<div class="srow"><span class="lbl">Include</span><div>Your name, track, a 2 to 3 line description of the project, and how to run it.</div></div>
+<div class="srow"><span class="lbl">Then</span><div>We reply by email with approval or feedback. Fix what we flag and resubmit as many times as you need, free.</div></div>
+</div>
+<div>
+<div class="tmpl"><div class="tmpl-bar"><span>Email template</span><button type="button" id="copyTpl">Copy template</button></div>
+<pre id="tplText">To: thedigitalgirlsinitiativepk@gmail.com
+Subject: [DGIP Certificate] &lt;Track&gt; - &lt;Your Full Name&gt;
+
+Hi DG·IP team,
+
+Full name:
+Track (Python / Web Development / HTML &amp; CSS):
+Email and WhatsApp number:
+Project title:
+GitHub link (or "zip attached"):
+Live link (Web tracks only):
+
+What my project does (2 to 3 lines):
+
+How to run it:
+
+Thank you!</pre></div>
+<a id="openMail" class="btn btn--primary" href="mailto:thedigitalgirlsinitiativepk@gmail.com?subject=%5BDGIP%20Certificate%5D">Open in my email app →</a>
+</div></div></div></section>
+<section class="cta-band">
+<p class="k">Ready when you are</p>
+<h2>Pick a roadmap and start building.</h2>
+<p>Not signed up yet? It takes two minutes and costs nothing.</p>
+<div class="hero-actions"><a href="signup.html" class="btn btn--dark">Sign Up Free →</a><a href="index.html#modules" class="btn btn--pink">Browse the roadmaps</a></div>
+</section>
+<footer>
+<div class="footer-grid">
+<div><h4>DG·IP</h4><p>Digital Girls Initiative Pakistan is a non-profit teaching young women the tech skills that open doors — free, forever.</p></div>
+<div class="footer-col"><p class="head">Navigate</p><a href="index.html">Home</a><a href="signup.html">Sign Up</a><a href="certified.html">Get Certified</a><a href="competitions.html">Competitions</a><a href="classes.html">Live Classes</a></div>
+<div class="footer-col"><p class="head">Skill Modules</p><a href="html-css.html">HTML &amp; CSS</a><a href="javascript.html">JavaScript</a><a href="python.html">Python</a><a href="design.html">UI/UX Design</a></div>
+<div class="footer-col"><p class="head">More Modules</p><a href="cybersecurity.html">Cybersecurity</a><a href="data-science.html">Data Science</a><a href="digital-literacy.html">Digital Literacy</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Digital Girls Initiative Pakistan. All rights reserved.</span><span>Built for the next generation of builders.</span></div>
+</footer>
+<script src="dgip.js" defer></script>
 </body>
 </html>
