@@ -149,6 +149,11 @@ section{position:relative}
 .pay-success{padding:18px;border:2px solid var(--line);background:var(--pink)}
 .pay-success h3{margin:0 0 8px;font-size:22px}
 .pay-success p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+.pay-soon{border:2px dashed var(--line);background:var(--cream);padding:clamp(28px,4vw,40px);text-align:center;max-width:640px}
+.pay-soon .pill{margin-bottom:16px}
+.pay-soon h3{font-size:clamp(24px,3vw,32px);margin:0 0 12px}
+.pay-soon p{color:var(--ink-soft);margin:0 0 12px}
+.pay-soon .pay-hint{margin:16px auto 0;max-width:520px;text-align:left}
 @media(max-width:980px){.pay-grid{grid-template-columns:1fr}}
 /* learning games */
 .games-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
