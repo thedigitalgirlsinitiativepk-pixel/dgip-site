@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competitions | Digital Girls Initiative Pakistan</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Competitions | Digital Girls Initiative Pakistan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dgip.css">
 </head>
-<body class="bg-[#0a0a0a] text-gray-100 font-sans min-h-screen">
-
-    <nav class="border-b border-gray-800 bg-[#0a0a0a]/80 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
-        <a href="index.html" class="text-xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Digital Girls Initiative PK</a>
-        <div class="flex gap-6 text-sm font-medium text-gray-300">
-            <a href="index.html" class="hover:text-purple-400 transition">Home</a>
-            <a href="certified.html" class="hover:text-purple-400 transition">Get Certified</a>
-            <a href="competitions.html" class="text-purple-400">Competitions</a>
-            <a href="classes.html" class="hover:text-purple-400 transition">Live Classes</a>
-            <a href="signup.html" class="bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-lg transition">Sign Up</a>
-        </div>
-    </nav>
-
-    <main class="max-w-4xl mx-auto px-6 py-12">
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Active & Upcoming Competitions</h1>
-            <p class="text-gray-400 max-w-xl mx-auto">Test your skills, build cool projects, win recognition, and secure exclusive prizes.</p>
-        </div>
-
-        <div class="bg-[#121212] border border-gray-800 rounded-xl p-6 mb-6">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                <div>
-                    <span class="bg-purple-900/50 text-purple-300 text-xs px-3 py-1 rounded-full border border-purple-700/50">Coding Sprint</span>
-                    <h2 class="text-2xl font-bold mt-2">3-Day Python Logic Hackathon</h2>
-                </div>
-                <div class="text-right">
-                    <span class="text-sm text-gray-400 block">Admission Fee:</span>
-                    <span class="text-cyan-400 font-bold">Free</span>
-                </div>
-            </div>
-            
-            <p class="text-gray-300 text-sm mb-6">Build a functional command-line utility or mini-game in Python solving a real-world problem.</p>
-            
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6 bg-[#1a1a1a] p-4 rounded-lg text-sm">
-                <div>
-                    <span class="text-gray-400 block text-xs">Deadline</span>
-                    <strong class="text-gray-200">October 25, 2026</strong>
-                </div>
-                <div>
-                    <span class="text-gray-400 block text-xs">Prizes</span>
-                    <strong class="text-gray-200">Physical Certificate + Hall of Fame Feature</strong>
-                </div>
-                <div>
-                    <span class="text-gray-400 block text-xs">Status</span>
-                    <strong class="text-green-400">Registration Open</strong>
-                </div>
-            </div>
-
-            <a href="signup.html" class="block text-center bg-purple-600 hover:bg-purple-500 text-white font-medium py-2.5 rounded-lg transition">Sign Up For Competition</a>
-        </div>
-    </main>
-
+<body>
+<div class="topbar"><div class="wrap"><span><span class="tag">✦</span>DIGITAL GIRLS INITIATIVE · PAKISTAN</span><span>EMPOWERING WOMEN THROUGH TECH</span></div></div>
+<nav class="nav"><div class="wrap">
+<a href="index.html" class="logo">DG<span>·</span>IP</a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="certified.html">Get Certified</a></li>
+<li><a href="competitions.html" class="active">Competitions</a></li>
+<li><a href="classes.html">Live Classes</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li class="dropdown"><a href="index.html#modules" class="nav-cta">Skill Modules</a>
+<div class="dropdown-menu">
+<a href="html-css.html">HTML &amp; CSS <small>01</small></a>
+<a href="javascript.html">JavaScript Fundamentals <small>02</small></a>
+<a href="python.html">Python Programming <small>03</small></a>
+<a href="design.html">Graphic Design &amp; UI/UX <small>04</small></a>
+<a href="cybersecurity.html">Cybersecurity Awareness <small>05</small></a>
+<a href="data-science.html">Data Science Basics <small>06</small></a>
+<a href="digital-literacy.html">Digital Literacy &amp; Safety <small>07</small></a>
+<a href="entrepreneurship.html">Tech Entrepreneurship <small>08</small></a>
+</div></li>
+</ul></div></nav>
+<header class="phero"><div class="wrap">
+<p class="crumbs"><a href="index.html">Home</a> / Competitions</p>
+<h1>Active &amp; upcoming <span class="block">competitions.</span></h1>
+<p>Test your skills, build cool projects, win recognition, and secure exclusive prizes.</p>
+</div></header>
+<section class="sec"><div class="wrap">
+<article class="ecard">
+<div class="ecard-top"><div><span class="pill">Coding Sprint</span><h2>3-Day Python Logic Hackathon</h2></div><div class="fee">Admission fee<strong>Free</strong></div></div>
+<p>Build a functional command-line utility or mini-game in Python solving a real-world problem.</p>
+<div class="meta"><div><span>Deadline</span>October 25, 2026</div><div><span>Prizes</span>Physical Certificate + Hall of Fame Feature</div><div><span>Status</span>Registration Open</div></div>
+<a href="signup.html" class="btn btn--primary">Sign up for competition →</a>
+</article>
+<div class="soon"><p>More competitions are on the way. Sign up to hear about them first.</p><a href="signup.html" class="btn btn--pink">Sign Up Free</a></div>
+</div></section>
+<section class="cta-band">
+<p class="k">Ready when you are</p>
+<h2>Pick a roadmap and start building.</h2>
+<p>Not signed up yet? It takes two minutes and costs nothing.</p>
+<div class="hero-actions"><a href="signup.html" class="btn btn--dark">Sign Up Free →</a><a href="index.html#modules" class="btn btn--pink">Browse the roadmaps</a></div>
+</section>
+<footer>
+<div class="footer-grid">
+<div><h4>DG·IP</h4><p>Digital Girls Initiative Pakistan is a non-profit teaching young women the tech skills that open doors — free, forever.</p></div>
+<div class="footer-col"><p class="head">Navigate</p><a href="index.html">Home</a><a href="signup.html">Sign Up</a><a href="certified.html">Get Certified</a><a href="competitions.html">Competitions</a><a href="classes.html">Live Classes</a></div>
+<div class="footer-col"><p class="head">Skill Modules</p><a href="html-css.html">HTML &amp; CSS</a><a href="javascript.html">JavaScript</a><a href="python.html">Python</a><a href="design.html">UI/UX Design</a></div>
+<div class="footer-col"><p class="head">More Modules</p><a href="cybersecurity.html">Cybersecurity</a><a href="data-science.html">Data Science</a><a href="digital-literacy.html">Digital Literacy</a><a href="entrepreneurship.html">Entrepreneurship</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Digital Girls Initiative Pakistan. All rights reserved.</span><span>Built for the next generation of builders.</span></div>
+</footer>
+<script src="dgip.js" defer></script>
 </body>
 </html>
